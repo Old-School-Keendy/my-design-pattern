@@ -14,7 +14,6 @@ import org.springframework.cglib.proxy.Proxy;
  * @date 2023/2/9 11:30 Copyright 2021 北京交个朋友数码科技有限公司. All rights reserved.
  */
 public class MapperFactoryBean<T> implements FactoryBean<T> {
-    private final Logger logger = LoggerFactory.getLogger(MapperFactoryBean.class);
     private final Class<T> mapperInterface;
 
     public MapperFactoryBean(Class<T> mapperInterface) {
